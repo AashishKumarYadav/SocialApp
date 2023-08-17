@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:scrollbarSize="100dp"
+        android:src="@drawable/ashish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aashish Kumar Yadav"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="I'm The Member of Google Developer Group (GDG) New Delhi and Student of B.tech(CSE) with excellent problem solving skills ability to perform well in a Team. Passionate about coding and enjoy making projects."
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gpt"
+            android:layout_width="188dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2.5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Chat GPT"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/social"
+            android:layout_width="188dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Social Media"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
